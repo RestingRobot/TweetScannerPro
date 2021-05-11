@@ -1,3 +1,43 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+
+	<!-- Per Material Design specs: -->
+	<!-- https://material.io/design/components/buttons-floating-action-button.html#specs -->
+	<dimen name="fab_margin">16dp</dimen>
+
+	<!-- Padding on the bottom of a screen so that the FAB won't overlap scrolled text. -->
+	<dimen name="fab_bottom_padding">72dp</dimen>
+
+	<dimen name="app_bar_height">400dp</dimen>
+
+	<dimen name="margin_normal">16dp</dimen>
+	<dimen name="margin_small">8dp</dimen>
+	<dimen name="margin_grid">2.5dp</dimen>
+
+	<dimen name="navigation_drawer_header_height">192dp</dimen>
+	<dimen name="navigation_drawer_header_padding">16dp</dimen>
+	<dimen name="navigation_drawer_image_width">100dp</dimen>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+
+	<dimen name="spacing_quarter">4dp</dimen>
+	<dimen name="spacing_half">8dp</dimen>
+	<dimen name="spacing_full">16dp</dimen>
+	<dimen name="spacing_double">32dp</dimen>
+
+	<dimen name="default_field_height">56dp</dimen>
+
+	<dimen name="dp_8">8dp</dimen>
+	<dimen name="dp_16">16dp</dimen>
+	<dimen name="dp_24">24dp</dimen>
+	<dimen name="dp_32">32dp</dimen>
+	<dimen name="dp_40">40dp</dimen>
+	<dimen name="dp_48">48dp</dimen>
+	<dimen name="dp_56">56dp</dimen>
+	<dimen name="dp_64">64dp</dimen>
+	<dimen name="dp_72">72dp</dimen>
+	<dimen name="dp_80">80dp</dimen>
+	<dimen name="dp_160">160dp</dimen>
+
 </resources>
