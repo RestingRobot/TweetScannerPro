@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="colorPrimary">@color/aquamarine</color>
-	<color name="colorPrimaryDark">@color/persian_green</color>
+	<color name="colorPrimary">@color/persian_green</color>
+	<color name="colorPrimaryDark">@color/midnight_green_eagle</color>
 	<color name="colorAccent">@color/cerulean_crayola</color>
 
 	<!-- color scheme from https://coolors.co/ -->
