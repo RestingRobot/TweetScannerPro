@@ -18,6 +18,8 @@
 	<color name="text_link_selected">#ff605b56</color>
 	<color name="text_error">#ff0000</color>
 
+
+
 	<!-- status colors -->
 	<color name="status_orange">#FFA260</color>
 	<color name="status_gray">#C3C3C3</color>
@@ -345,6 +347,8 @@
 	<color name="grey_900">#212121</color> <!-- Use with white text -->
 	<color name="grey_1000_b">#000000</color> <!-- Use with white text -->
 	<color name="white">#ffffff</color> <!-- Use with black text -->
+	<color name="black">#000000</color>
 
 	<color name="overlay_bg">#dd000000</color>
+
 </resources>

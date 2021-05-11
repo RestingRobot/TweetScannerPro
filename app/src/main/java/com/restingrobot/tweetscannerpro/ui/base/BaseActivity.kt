@@ -9,7 +9,9 @@ import androidx.navigation.ui.NavigationUI
 import com.restingrobot.tweetscannerpro.R
 import com.restingrobot.tweetscannerpro.databinding.ActivityBaseBinding
 import com.restingrobot.tweetscannerpro.ui.viewmodel.TweetViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class BaseActivity : AppCompatActivity() {
 
 	private val viewModel: TweetViewModel by viewModels()
