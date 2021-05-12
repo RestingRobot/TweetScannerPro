@@ -12,24 +12,23 @@
 		style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="8dp"
-		android:layout_marginTop="24dp"
-		android:layout_marginEnd="8dp"
+		android:layout_marginStart="@dimen/dp_8"
+		android:layout_marginTop="@dimen/dp_24"
+		android:layout_marginEnd="@dimen/dp_8"
 		android:hint="Search Tweets"
-		android:imeActionLabel="Search"
-		android:imeOptions="actionDone"
+		android:imeOptions="actionSearch"
 		app:boxBackgroundColor="@android:color/transparent"
-		app:errorEnabled="true"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent">
 
 		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/search_edit"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:inputType="textAutoCorrect"
-			android:selectAllOnFocus="true"
-			android:singleLine="true" />
+			android:maxLines="1"
+			android:inputType="text"
+			android:imeOptions="actionSearch" />
 
 	</com.google.android.material.textfield.TextInputLayout>
 

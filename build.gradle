@@ -15,6 +15,84 @@ buildscript {
     }
 }
 
+ext {
+
+	// Sdk and tools
+	minSdkVersion = 23
+	targetSdkVersion = 30
+	compileSdkVersion = 30
+	buildToolsVersion = '30.0.0'
+
+	// Core Libraries
+	coreVersion = '1.3.2'
+
+	// UI
+	appCompatVersion = '1.2.0'
+	constraintLayoutVersion = '2.0.4'
+	materialVersion = '1.3.0'
+	recyclerViewVersion = '1.1.0'
+
+	// Fragment
+	fragmentVersion = '1.3.0'
+
+	// Lifecycle
+	lifecycleVersion = '2.3.0'
+	viewModelLifecycle = '2.3.0-beta01'
+
+	// Live Data
+	liveDataVersion = '2.3.0'
+
+	// Work
+	workVersion = '2.5.0'
+
+	// Coroutines
+	coroutinesVersion = "1.4.1"
+
+	// Preference
+	preferenceVersion = '1.1.1'
+
+	// Dagger
+	daggerVersion = '2.23.2'
+	androidXHiltVersion = '1.0.0-alpha03'
+
+	// Room
+	roomVersion = '2.2.6'
+
+	// Collections
+	collectionVersion = '1.1.0'
+
+	// Stetho
+	stethoVersion = '1.5.1'
+
+	//GSON
+	gsonVersion = '2.8.6'
+
+	// Testing dependencies
+	junitVersion = '4.13.1'
+	espressoVersion = '3.3.0'
+	coreTestingVersion = '2.1.0'
+	jacocoVersion = '0.8.4'
+	runnerVersion = '1.0.1'
+	testExtJunit = '1.1.2'
+	uiAutomatorVersion = '2.2.0'
+	mockitoVersion = "2.25.0"
+	mockitoAllVersion = "1.10.19"
+	mockitoAndroidVersion = "2.25.0"
+	mockwebserverVersion = "4.2.2"
+	testCoreVersion = "1.3.0"
+	testRunnerVersion = "1.3.0"
+	testRulesVersion = "1.3.0"
+
+	// U-Haul Library Versions
+	uiLibraryVersion = "1.1.6@aar"
+	utilityLibraryVersion = "1.0.4@aar"
+
+	// Network dependencies
+	retrofitVersion = '2.6.2'
+	okHTTPVersion = '4.2.2'
+
+}
+
 allprojects {
     repositories {
         google()
