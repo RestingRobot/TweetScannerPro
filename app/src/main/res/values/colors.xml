@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="colorPrimary">@color/persian_green</color>
-	<color name="colorPrimaryDark">@color/midnight_green_eagle</color>
-	<color name="colorAccent">@color/cerulean_crayola</color>
+
+	<color name="colorPrimary">#9e2a2b</color>
+	<color name="colorPrimaryVariant">#540b0e</color>
+	<color name="colorSecondary">#fff3b0</color>
+	<color name="colorSecondaryVariant">#e09f3e</color>
+	<color name="colorAccent">#335c67</color>
 
 	<!-- color scheme from https://coolors.co/ -->
-	<color name="midnight_green_eagle">#004e64</color>
-	<color name="cerulean_crayola">#00a5cf</color>
-	<color name="aquamarine">#9fffcb</color>
-	<color name="persian_green">#25a18e</color>
 
 	<color name="warning_color">#f4511e</color>
 	<color name="hint_color">#42000000</color>
