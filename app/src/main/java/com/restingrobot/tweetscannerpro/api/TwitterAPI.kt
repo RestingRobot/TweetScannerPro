@@ -81,7 +81,7 @@ interface TwitterAPI {
 			"next_token": "b26v89c19zqg8o3foswrepjgwlyku996y3nlqfj849ail"
 		}
 	*/
-	@GET("/tweets/search/recent?query={query}&max_results=10&tweet.fields=")
+	@GET("tweets/search/recent")
 	suspend fun getTweets(
 		@Query("query") query: String,
 		@Query("max_results") max: Int? = 10,
@@ -90,7 +90,7 @@ interface TwitterAPI {
 	) : TweetSearchResponse
 
 	companion object {
-		public const val BASE_URL = "https://api.twitter.com/2"
+		public const val BASE_URL = "https://api.twitter.com/2/"
 	}
 
 }

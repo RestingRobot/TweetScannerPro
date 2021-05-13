@@ -1,5 +1,6 @@
 package com.restingrobot.tweetscannerpro.network
 
+import com.restingrobot.tweetscannerpro.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.Response
 
@@ -16,7 +17,7 @@ class AuthInterceptor: Interceptor {
 	override fun intercept(chain: Interceptor.Chain): Response {
 		var request = chain.request()
 
-		val basicAuthToken = ""
+		val basicAuthToken =  "Bearer " + BuildConfig.BEARER_TOKEN
 
 		// Add basic auth header
 		request = request.newBuilder()

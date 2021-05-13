@@ -1,5 +1,7 @@
 package com.restingrobot.tweetscannerpro.model
 
+import com.google.gson.annotations.SerializedName
+
 
 /**
  *
@@ -7,5 +9,9 @@ package com.restingrobot.tweetscannerpro.model
  *
  * Created by Jon Lange, 5/12/21
  */
-class TweetSearchResponse(var tweets: List<Tweet>, var meta: SearchMeta) {
+class TweetSearchResponse(
+	@SerializedName("data")
+	var tweets: List<Tweet>,
+	@SerializedName("meta")
+	var meta: SearchMeta) {
 }

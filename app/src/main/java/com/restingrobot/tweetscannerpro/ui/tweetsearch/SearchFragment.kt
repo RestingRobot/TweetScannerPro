@@ -53,7 +53,9 @@ class SearchFragment : BaseFragment<FragmentSearchBinding, TweetViewModel>() {
 		}
 
 		lifecycleScope.launchWhenCreated {
-			//TODO: Get latest tweets from viewmodel
+			viewModel.tweets.collectLatest {
+				adapter.submitData(it)
+			}
 		}
 
 		// Listen for RemoteMediator changes and only emit when a refresh is
@@ -93,9 +95,8 @@ class SearchFragment : BaseFragment<FragmentSearchBinding, TweetViewModel>() {
 
 	private fun updateTweetSearchFromInput() {
 		binding.searchEdit.text?.trim().toString().let {
-			if(it.isNotBlank()) {
-				//TODO: Execute Search
-				toast("Execute Tweet Search for query: $it")
+			if(it.isNotBlank() && viewModel.shouldDoSearch(it)) {
+				viewModel.doSearch(it)
 				binding.searchEdit.hideKeyboard()
 			}
 		}

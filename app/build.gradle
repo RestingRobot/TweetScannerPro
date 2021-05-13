@@ -16,7 +16,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
+
+		buildConfigField "String", "BEARER_TOKEN", (project.findProperty("TWITTER_BEARER_TOKEN") ?: "")
+	}
 
     buildTypes {
         release {
