@@ -88,7 +88,7 @@ ext {
 	utilityLibraryVersion = "1.0.4@aar"
 
 	// Network dependencies
-	retrofitVersion = '2.6.2'
+	retrofitVersion = '2.9.0'
 	okHTTPVersion = '4.2.2'
 
 }

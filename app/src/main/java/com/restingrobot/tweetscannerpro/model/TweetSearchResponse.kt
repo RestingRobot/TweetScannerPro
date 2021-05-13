@@ -7,5 +7,5 @@ package com.restingrobot.tweetscannerpro.model
  *
  * Created by Jon Lange, 5/12/21
  */
-class TweetSearch(var tweets: List<Tweet>, var meta: SearchMeta) {
+class TweetSearchResponse(var tweets: List<Tweet>, var meta: SearchMeta) {
 }
