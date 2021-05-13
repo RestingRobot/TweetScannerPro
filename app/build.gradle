@@ -16,7 +16,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
+
+		buildConfigField "String", "BEARER_TOKEN", (project.findProperty("TWITTER_BEARER_TOKEN") ?: "")
+	}
 
     buildTypes {
         release {
@@ -69,4 +71,11 @@ dependencies {
 	androidTestImplementation "com.google.dagger:hilt-android-testing:$hilt_version"
 	// Make Hilt generate code in the androidTest folder
 	kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+	// Networking
+	implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+	implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+	implementation "com.squareup.okhttp3:okhttp:$rootProject.okHTTPVersion"
+	implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHTTPVersion"
+	implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 }

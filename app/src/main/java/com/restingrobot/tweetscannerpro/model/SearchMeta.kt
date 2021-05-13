@@ -1,5 +1,7 @@
 package com.restingrobot.tweetscannerpro.model
 
+import com.google.gson.annotations.SerializedName
+
 
 /**
  *
@@ -8,8 +10,11 @@ package com.restingrobot.tweetscannerpro.model
  * Created by Jon Lange, 5/11/21
  */
 data class SearchMeta(
-	val newestId: String,
-	val oldestId: String,
-	val resultCount: Int,
-	val nextToken: String
-	)
+	@SerializedName("newest_id")
+	var newestId: String,
+	@SerializedName("oldest_id")
+	var oldestId: String,
+	@SerializedName("result_count")
+	var resultCount: Int,
+	@SerializedName("next_token")
+	var nextToken: String? = null)
