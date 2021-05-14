@@ -22,8 +22,10 @@ import javax.inject.Inject
  * Created by Jon Lange, 5/11/21
  */
 @HiltViewModel
-class TweetViewModel @Inject constructor(private val tweetRepository: TweetRepository,
-private val savedStateHandle: SavedStateHandle) : ViewModel() {
+class TweetViewModel @Inject constructor(
+	private val tweetRepository: TweetRepository,
+	private val savedStateHandle: SavedStateHandle
+) : ViewModel() {
 
 	private val clearListChannel = Channel<Unit>(Channel.CONFLATED)
 
@@ -40,7 +42,7 @@ private val savedStateHandle: SavedStateHandle) : ViewModel() {
 	fun shouldDoSearch(query: String) = savedStateHandle.get<String>(KEY_QUERY) != query
 
 	fun doSearch(query: String) {
-		if(!shouldDoSearch(query)) return
+		if (!shouldDoSearch(query)) return
 
 		clearListChannel.offer(Unit)
 

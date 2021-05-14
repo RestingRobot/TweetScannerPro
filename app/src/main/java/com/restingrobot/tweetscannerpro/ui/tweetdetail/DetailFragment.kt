@@ -19,7 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
  * Created by Jon Lange, 5/11/21
  */
 @AndroidEntryPoint
-class DetailFragment : BaseFragment<FragmentDetailBinding, TweetViewModel>(){
+class DetailFragment : BaseFragment<FragmentDetailBinding, TweetViewModel>() {
 
 	override val viewModel: TweetViewModel by activityViewModels()
 

@@ -23,8 +23,8 @@ class TweetViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 	private val id: TextView = view.findViewById(R.id.tweet_id)
 
 	init {
-	    view.setOnClickListener {
-	    	// TODO: Set click listener when user taps tweet
+		view.setOnClickListener {
+			// TODO: Set click listener when user taps tweet
 		}
 	}
 
@@ -40,7 +40,8 @@ class TweetViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 	companion object {
 		fun create(parent: ViewGroup): TweetViewHolder {
-			val view = LayoutInflater.from(parent.context).inflate(R.layout.item_tweet, parent, false)
+			val view =
+				LayoutInflater.from(parent.context).inflate(R.layout.item_tweet, parent, false)
 			return TweetViewHolder(view)
 		}
 	}

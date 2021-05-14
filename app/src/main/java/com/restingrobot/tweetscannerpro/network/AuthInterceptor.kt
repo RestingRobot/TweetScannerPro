@@ -11,13 +11,13 @@ import okhttp3.Response
  *
  * Created by Jon Lange, 5/12/21
  */
-class AuthInterceptor: Interceptor {
+class AuthInterceptor : Interceptor {
 
 
 	override fun intercept(chain: Interceptor.Chain): Response {
 		var request = chain.request()
 
-		val basicAuthToken =  "Bearer " + BuildConfig.BEARER_TOKEN
+		val basicAuthToken = "Bearer " + BuildConfig.BEARER_TOKEN
 
 		// Add basic auth header
 		request = request.newBuilder()

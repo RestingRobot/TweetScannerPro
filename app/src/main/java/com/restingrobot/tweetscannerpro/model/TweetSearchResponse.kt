@@ -13,5 +13,6 @@ class TweetSearchResponse(
 	@SerializedName("data")
 	var tweets: List<Tweet>,
 	@SerializedName("meta")
-	var meta: SearchMeta) {
+	var meta: SearchMeta
+) {
 }

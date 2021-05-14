@@ -15,7 +15,7 @@ import java.lang.ClassCastException
 /**
  * A [Fragment] subclass that can be extended for all other fragments
  */
-abstract class BaseFragment<VB: ViewBinding, VM : ViewModel> : Fragment() {
+abstract class BaseFragment<VB : ViewBinding, VM : ViewModel> : Fragment() {
 
 	private var _binding: VB? = null
 	protected val binding get() = _binding!!
@@ -37,11 +37,11 @@ abstract class BaseFragment<VB: ViewBinding, VM : ViewModel> : Fragment() {
 
 		try {
 			activity?.let {
-				if(it is BaseActivity) {
+				if (it is BaseActivity) {
 					baseActivity = activity as BaseActivity
 				}
 			}
-		} catch(e: ClassCastException) {
+		} catch (e: ClassCastException) {
 			throw ClassCastException("$context must be BaseActivity")
 		}
 	}
@@ -58,7 +58,6 @@ abstract class BaseFragment<VB: ViewBinding, VM : ViewModel> : Fragment() {
 	fun toast(message: String) {
 		Toast.makeText(activity, message, Toast.LENGTH_LONG).show()
 	}
-
 
 
 }

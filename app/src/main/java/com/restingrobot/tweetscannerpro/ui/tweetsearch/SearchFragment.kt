@@ -95,7 +95,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding, TweetViewModel>() {
 
 	private fun updateTweetSearchFromInput() {
 		binding.searchEdit.text?.trim().toString().let {
-			if(it.isNotBlank() && viewModel.shouldDoSearch(it)) {
+			if (it.isNotBlank() && viewModel.shouldDoSearch(it)) {
 				viewModel.doSearch(it)
 				binding.searchEdit.hideKeyboard()
 			}

@@ -17,4 +17,5 @@ data class SearchMeta(
 	@SerializedName("result_count")
 	var resultCount: Int,
 	@SerializedName("next_token")
-	var nextToken: String? = null)
+	var nextToken: String? = null
+)

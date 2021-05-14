@@ -12,7 +12,8 @@ import com.restingrobot.tweetscannerpro.ui.tweetsearch.NetworkStateViewHolder
  *
  * Created by Jon Lange, 5/11/21
  */
-class TweetsLoadStateAdapter(private val adapter: TweetAdapter) : LoadStateAdapter<NetworkStateViewHolder>(){
+class TweetsLoadStateAdapter(private val adapter: TweetAdapter) :
+	LoadStateAdapter<NetworkStateViewHolder>() {
 
 	override fun onBindViewHolder(holder: NetworkStateViewHolder, loadState: LoadState) {
 		holder.bindTo(loadState)
