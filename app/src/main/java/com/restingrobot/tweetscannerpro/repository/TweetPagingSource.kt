@@ -15,8 +15,10 @@ import javax.inject.Inject
  *
  * Created by Jon Lange, 5/12/21
  */
-class TweetPagingSource @Inject constructor(private val service: TwitterService,
-											private val query: String) : PagingSource<String, Tweet>() {
+class TweetPagingSource @Inject constructor(
+	private val service: TwitterService,
+	private val query: String
+) : PagingSource<String, Tweet>() {
 
 	override fun getRefreshKey(state: PagingState<String, Tweet>): String? {
 		return state.anchorPosition?.let { anchorPosition ->
